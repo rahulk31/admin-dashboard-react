@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.addUser {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #000, $alpha: 0.724);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal {
+    padding: 50px;
+    width: 40%;
+    background-color: $main-bg;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .header {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      text-transform: capitalize;
+    }
+  }
+
+  .close {
+    font-size: 20px;
+    padding: 5px 12px;
+    border-radius: 50%;
+    border: 2px solid $soft-bg;
+    cursor: pointer;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      font-family: inherit;
+      border: none;
+      color: $soft-color;
+      background-color: $soft-bg;
+      outline: none;
+    }
+  }
+
+  button {
+    margin-top: 40px;
+    padding: 10px 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+  }
+}

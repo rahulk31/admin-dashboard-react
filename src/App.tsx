@@ -7,6 +7,8 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
 import "./styles/global.scss";
+import Product from "./pages/product/Product";
+import User from "./pages/user/User";
 
 function App() {
   const Layout = () => {
@@ -14,12 +16,12 @@ function App() {
       <div className="main">
         <Navbar />
         <div className="container">
-        <div className="menuContainer">
-          <Menu />
-        </div>
-        <div className="contentContainer">
-          <Outlet />
-        </div>
+          <div className="menuContainer">
+            <Menu />
+          </div>
+          <div className="contentContainer">
+            <Outlet />
+          </div>
         </div>
         <Footer />
       </div>
@@ -42,6 +44,14 @@ function App() {
         {
           path: "/products",
           element: <Products />,
+        },
+        {
+          path: "/products/:id",
+          element: <Product />,
+        },
+        {
+          path: "/users/:id",
+          element: <User />,
         },
       ],
     },

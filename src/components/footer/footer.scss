@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  border-top: 2px solid $soft-bg;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  span {
+    &:first-child {
+      font-weight: bold;
+      color: cyan;
+      font-size: 20px;
+    }
+
+    &:last-child {
+      font-size: 14px;
+    }
+  }
+}

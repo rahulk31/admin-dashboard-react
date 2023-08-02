@@ -21,7 +21,7 @@ type Props = {
   activities: { time: string; text: string }[];
 };
 
-const Single = ({ id, img, title, info, chart, activities }: Props) => {
+const Single = ({ img, title, info, chart, activities }: Props) => {
   return (
     <div className="single">
       <div className="view">

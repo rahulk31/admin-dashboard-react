@@ -11,7 +11,7 @@ type Props = {
 const DataTable = (props: Props) => {
   const handleDelete = (id: number) => {
     //TODO: delete
-    console.log("item deleted");
+    console.log("item deleted: ", id);
   };
   const actionColumn: GridColDef = {
     field: "action",
